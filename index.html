@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header id="css_tutorial">CSS Tutorial</header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#What_is_CSS" class="nav-link">What is CSS</a></li>
+      <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+      <li><a href="#Box_model" class="nav-link">Box model</a></li>
+      <li><a href="#CSS_Responsive" class="nav-link">CSS Responsive</a></li>
+    </ul>  
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis massa sit amet dui molestie venenatis. Duis aliquet nibh vitae ornare lacinia. Praesent vehicula id nibh sed vehicula. Nam gravida lacinia urna ac iaculis. Nam in mauris vel tellus tristique consectetur. Donec porta eu odio quis facilisis. Maecenas in nisl finibus, aliquam nunc vitae, scelerisque tellus. 
+      </p>
+      <p>
+        Suspendisse eu dapibus mi, eget porta magna. Duis dictum vel felis in imperdiet. Mauris egestas vulputate justo quis finibus. Duis ultrices nec est vel semper. Quisque pretium, justo id dignissim lacinia, erat velit imperdiet nulla, id condimentum dui dui non urna. Ut eu hendrerit justo. Duis eleifend malesuada orci, sit amet aliquet metus
+      </p>
+      <p>
+        Nullam ut tempus sapien. Donec aliquam convallis purus vitae faucibus. Praesent ornare mattis auctor. Cras augue felis, faucibus at egestas eget, bibendum vitae lacus. Fusce accumsan nulla eget malesuada convallis. Integer euismod risus rhoncus ipsum sagittis, quis tempor augue ornare. Nam in vestibulum magna.
+      </p>
+    </section> 
+
+    <section class="main-section" id="What_is_CSS">
+      <header>
+        What is CSS
+      </header>
+      <p>
+        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+      </p>
+      <p>
+        CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+      </p>
+      <p>
+        Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.
+        The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+      </p>
+
+    </section>
+
+    <section class="main-section" id="Syntax">
+      <header>Syntax</header>
+      <p>
+        CSS has a simple syntax and uses a number of English keywords to specify the names of various style properties. A style sheet consists of a list of rules. Each rule or rule-set consists of one or more selectors, and a declaration block.
+      </p>
+      <ul>
+        <li>Selectors</li>
+        <li>Property</li>
+        <li>Value</li>
+      </ul>  
+      Let’s say you want to change the color of all your blockquotes.
+      Focus on the tag name (and forget about the angle brackets <> and the text). In our case, all that remains is “blockquote”. There’s a direct relation between the tag name and the selector.
+
+      Let’s use that in our CSS as a selector, and let’s apply some styling:
+      <code>blockquote{ background: lightgreen;}</code>
+    </p>
+    
+  </section>
+
+  <section class="main-section" id="Box_model">
+    <header>Box model</header>
+    <p>
+      When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
+    </p>
+    <p>
+      Every box is composed of four parts (or areas), defined by their respective edges:
+    </p>
+    <ul>
+      <li>The content edge</li>
+      <li>Padding edge</li>
+      <li>Border edge</li>
+      <li>Margin edge</li>
+    </ul>
+    <p>This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).</p>
+
+    <p>The following illustration shows two div elements with the same specified width and height:</p>
+    <code> .div1 {<br>
+      width: 300px;<br>
+      height: 100px;<br>
+      border: 1px solid blue;<br>
+    }
+  </code><br>
+  <code>* {
+    box-sizing: border-box;
+  }
+</code> 
+
+</section>
+
+<section class="main-section" id="CSS_Responsive">
+  <header>CSS Responsive</header>
+
+  <p>
+    Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD. Content, design and performance are necessary across all devices to ensure usability and satisfaction.
+  </p>
+  <p>
+    A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids,flexible images and CSS3 media queries,an extension of the @media rule, in the following ways:
+  </p>
+  <p> 
+    <code> @media not|only mediatype and (expressions) {
+    CSS-Code; </code><br>
+    
+    <code>@media screen and (min-width: 480px) {
+      body {
+      background-color: lightgreen;
+    }
+  }
+</code>
+
+</section>
+
+</main>  
+
+</body>
+</html>
